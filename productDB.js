@@ -1,26 +1,14 @@
-[{
-    "name":"riteesh",
-    "price":123,
-    "feature":true,
-    "company":"apple"
-},
-{
-    "name":"rahul",
-    "price":1223,
-    "feature":true,
-    "company":"apple"
-},
-{
-    "name":"rohit",
-    "price":1243,
-    "feature":true,
-    "company":"apple"
-},
-{
-    "name":"vikash",
-    "price":1243,
-    "feature":true,
-    "company":"apple"
-},
-
-]
+require("dotenv").config();
+const connectDB = require("./db/connect");
+const Product = require("./model/product");
+const ProductJson = require("./product.json");
+const start = async()=>{
+try {
+    await connectDB(process.env.MONGODB_URL);
+    await Product.create(ProductJson);
+    console.log("success");
+} catch (error) {
+    console.log(error);
+}
+}
+start();

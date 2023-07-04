@@ -1,0 +1,26 @@
+[{
+    "name":"riteesh",
+    "price":123,
+    "feature":true,
+    "company":"apple"
+},
+{
+    "name":"rahul",
+    "price":1223,
+    "feature":true,
+    "company":"apple"
+},
+{
+    "name":"rohit",
+    "price":1243,
+    "feature":true,
+    "company":"apple"
+},
+{
+    "name":"vikash",
+    "price":1243,
+    "feature":true,
+    "company":"apple"
+}
+
+]
